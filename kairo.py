@@ -24,18 +24,97 @@ PHRASES_BAN = [
 ]
 
 PHRASES_UNBAN = [
-    "Hello WhatsApp Support Team,My WhatsApp account linked with my phone number [your phone number with country code] has been banned, and I am seeing the message *“This account cannot use WhatsApp.”*I believe this may have happened by mistake. I always try to follow the platform rules and did not intentionally violate any policies. I kindly request you to review my account again and help restore access if possible.I use this account for personal communication, and it is very important for me. I assure you that I will follow all WhatsApp guidelines in the future.Thank you for your time and support.Best regards,[Your Name]        Моя учетная запись на WhatsApp была запрещена из -за недоразумения инфильтратора, чтобы я мог держать свою учетную запись запрещенной, не будучи убежденными в причине и о мерах, которые я принял. И моя работа, поскольку я владелец бизнеса, у меня много врагов, пытающихся создать свою учетную запись и подготовить свою учетную запись, чтобы я мог перестать работать. Вы должны помочь мне и дать мне возможность встать и не отставать от работы. Я прошу вас попросить пересмотреть свое дело и оправдать. Спасибо. № {num}",
-    "Dear WhatsApp Support Team,My WhatsApp account associated with this phone number has been banned. I believe this ban may have been applied by mistake.I would like to confirm that I always try to follow WhatsApp’s Terms of Service and have never intentionally violated any rules. If any activity from my account was flagged incorrectly or unknowingly, I sincerely apologize.I kindly request you to review my account again and restore access if possible. WhatsApp is very important for my personal and professional communication.Thank you for your time and support. I look forward to your positive response.Regards,YOUR NAME   Нехай буде з вами мир Божий, благословення та    благословення. Після безпеки, медичні вітання та подяка команді підтримки WhatsApp за швидку відповідь своїм користувачам. У мене є проблема, і я хочу вирішити її через службу підтримки. Сподіваюся, це питання буде вирішено. Тут мій номер телефону заблоковано без будь-якого повідомлення, і я порушив будь-які умови використання, але мене сповістили. Мій номер телефону, і це неправдиві повідомлення, і ви можете це перевірити. Я прошу вас розблокувати цей номер телефону {num}. Ви можете допомогти мені відновити мої дані в WhatsApp, і тоді ви повірите тому, що я сказав, і всі повідомлення будуть неправдивими. Опис проблеми: вони використовують мене неофіційно, і вони використовують мене. Я повертаю повідомлення на свій номер телефону, щоб вони могли заблокувати мій номер телефону. Я прошу службу підтримки whatsapp розблокувати мій номер телефону. З Новим роком, мої вітання за підтримку.",
-    "Hello WhatsApp Support Team,My WhatsApp number has been restricted due to the use of an unofficial WhatsApp application. I was not aware that this violated WhatsApp policies.I have now completely uninstalled all unofficial or third-party apps and reinstalled the official WhatsApp application from the Play Store. I assure you that I will strictly follow WhatsApp’s Terms of Service in the future.I kindly request you to review my account and restore access if possible.WhatsApp Number: +91XXXXXXXXXXThank you for your time and support.RegardYour Name        Je ne peux plus me connecter avec le numéro {num}",
-    "METODE UNBAND PERMANEN CHADDGNTGMessage : Hello WhatsApp messenger, my WhatsApp account is experiencing an accidental blocking problem and we would like to contact the [https://faq.whatsapp.com/] team and the [support@support.whatsapp.com] team.Please WhatsApp to release the blocking of my WhatsApp account [ https://wa.me/+509@whatsapp.com ] thank youSacred Message:Thank you for responding to my WhatsApp account blocking problem request https://faq.whatsapp.com/854037192262196 please immediately lift the ban on blocking my WhatsApp account. I will not repeat this violation that I made againWork don't forget to store         إلى فريق دعم واتساب، أرجو منكم مراجعة قرار حظر رقمي {num} حيث تم إيقافه بشكل مفاجئ دون ارتكاب أي مخالفة لسياساتكم. أظن أن هناك بلاغات كيدية كاذبة تم تقديمها ضدي من قبل مجهولين. هذا الرقم هو وسيلة اتصالي الوحيدة بعملي وعائلتي. أرجو منكم التحقق من سجلات الحساب وإعادة تفعيله في أقرب وقت ممكن. شكراً جزيلاً لكم على تفهمكم ومساعدتكم.",
-    "Hello WhatsApp Support Team,I’m writing this message as a sincere and final appeal to review my permanently banned WhatsApp account. It has been several months since my account was banned, and I have already submitted multiple appeals, but unfortunately, I haven’t received any helpful response or resolution.I truly beg for your kind consideration to review my case once again. I never violated WhatsApp’s Terms of Service, and I have always used my number for personal communication only.This number is very important to me because it contains years of contacts with my family and friends — many of whom live far away, even since my childhood. Losing access to this account makes it very difficult for me to reconnect and communicate with them.I kindly and sincerely ask your team to please review my account one more time and give me a chance to recover it. I promise to strictly follow all WhatsApp rules in the future.Thank you so much for your time, patience, and understanding.Best regards,[Your Name]Phone Number{Num}   Hola, mi cuenta de WhatsApp vinculada al número {num} ha sido suspendida por error. No he infringido ninguna de las condiciones de servicio y siempre he mantenido un comportamiento adecuado. Soy un usuario activo y necesito mi cuenta para contactar con mi familia y por motivos de seguridad personal. Les pido por favor que revisen mi caso manualmente y reactiven mi número {num} lo antes posible. Muchas gracias por su ayuda y comprensión.",
- "WHATSAPP UNBANNING TEXT You generally appeal an account ban directly through the WhatsApp app when you see the ban message, or you can contact WhatsApp support via email.Here are a few text templates for your unban request, depending on your situation. Remember to be polite, concise, and honest.1. General Appeal (If you don't know the exact reason or believe it's a mistake)Subject: Request to Review and Unban WhatsApp Account - [Your Phone Number]Dear WhatsApp Support Team,I am writing to appeal the ban on my WhatsApp account with the number [Your Country Code] [Your Phone Number].I recently found that my account was banned. I am unsure of the specific reason, but I assure you that I have always intended to use WhatsApp responsibly and in compliance with your Terms of Service. If there has been an accidental violation or a misunderstanding, I sincerely apologize.WhatsApp is vital for my daily communication with family, friends, and work. I kindly request that you review my account and consider lifting the ban. I am committed to following all WhatsApp guidelines moving forward.Thank you for your time and assistance.Sincerely, [Your Name] [Your Email Address]To the WhatsApp Support Team, I am writing to formally request a review of the suspension of my account {num}. My account was deactivated without any prior warning or violation of terms. This number is essential for my professional communication and daily business operations. I believe this is a false report generated by automated systems or malicious actors. Please investigate my account history and restore my access immediately as this block is causing significant professional damage. Best regards.",
-    "إلى فريق دعم واتساب، أرجو منكم مراجعة قرار حظر رقمي {num} حيث تم إيقافه بشكل مفاجئ دون ارتكاب أي مخالفة لسياساتكم. أظن أن هناك بلاغات كيدية كاذبة تم تقديمها ضدي من قبل مجهولين. هذا الرقم هو وسيلة اتصالي الوحيدة بعملي وعائلتي. أرجو منكم التحقق من سجلات الحساب وإعادة تفعيله في أقرب وقت ممكن. شكراً جزيلاً لكم على تفهمكم ومساعدتكم.",
-    "Hola, mi cuenta de WhatsApp vinculada al número {num} ha sido suspendida por error. No he infringido ninguna de las condiciones de servicio y siempre he mantenido un comportamiento adecuado. Soy un usuario activo y necesito mi cuenta para contactar con mi familia y por motivos de seguridad personal. Les pido por favor que revisen mi caso manualmente y reactiven mi número {num} lo antes posible. Muchas gracias por su ayuda y comprensión.",
-    "Official Request for Account Reinstatement: {num}. My account has been suspended without a specific reason or evidence of violation. As a user, I strictly adhere to the WhatsApp Terms of Service. This suspension appears to be an automated error or the result of malicious reporting. I hereby request a manual human review of my account logs to verify my compliance. Please restore access to this number {num} immediately to avoid further disruption of my personal and legal communications. Thank you for your professional cooperation.",
-    "Guten Tag Support-Team, hiermit beantrage ich die sofortige Prüfung und Reaktivierung meines Kontos {num}. Mein Konto wurde ohne vorherige Ankündigung gesperrt, obwohl ich keine Richtlinien verletzt habe. Diese Nummer {num} ist für meine tägliche Arbeit und Erreichbarkeit zwingend erforderlich. Ich vermute einen technischen Fehler im automatisierten System. Bitte führen Sie eine manuelle Überprüfung durch, damit ich mein Konto wieder nutzen kann. Vielen Dank für Ihre Hilfe."
-]
 
+    """Hello WhatsApp Support Team,
+
+I am writing to respectfully request a review of the restriction placed on my WhatsApp account associated with the number {num}.
+
+I recently noticed that I can no longer access my account and I believe the restriction may have been applied by mistake. I always try to use WhatsApp responsibly and follow the applicable Terms of Service and community rules.
+
+This account is important for communicating with my family, friends, colleagues, and other contacts. I would sincerely appreciate it if your team could review the account status and determine whether the restriction can be removed.
+
+If there was any activity that unintentionally violated a policy, I am willing to correct the issue and make sure that my future use of WhatsApp remains compliant with the platform rules.
+
+Please review my account and provide any information that may help me understand the situation.
+
+Thank you for your time and assistance.
+
+Best regards,
+Account owner
+Phone number: {num}""",
+
+    """Dear WhatsApp Support Team,
+
+I would like to submit a formal request for a review of my WhatsApp account associated with {num}.
+
+My account has recently been restricted, and I am currently unable to use the service normally. I am not sure what caused the restriction, so I kindly ask your support team to investigate the account and verify whether the restriction was issued correctly.
+
+I understand that WhatsApp has rules designed to protect its users and maintain a safe platform. I respect these rules and intend to follow them carefully.
+
+This account contains important conversations and contacts that I use for normal communication. Losing access has caused considerable inconvenience.
+
+I would be grateful if you could review my case and let me know whether my account can be restored.
+
+Thank you for reviewing my request.
+
+Sincerely,
+Account owner
+Phone number: {num}""",
+
+    """Hola equipo de soporte de WhatsApp,
+
+Me pongo en contacto con ustedes para solicitar amablemente una revisión de mi cuenta de WhatsApp asociada al número {num}.
+
+Actualmente mi cuenta se encuentra restringida y no puedo utilizar el servicio con normalidad. Considero que puede tratarse de un error o de una revisión automática.
+
+Siempre intento utilizar WhatsApp de manera responsable y respetar las condiciones del servicio. Si alguna actividad de mi cuenta fue considerada incorrecta, agradecería recibir información para poder comprender la situación y evitar cualquier problema en el futuro.
+
+Esta cuenta es importante para mis comunicaciones personales y profesionales.
+
+Les agradecería mucho que revisaran nuevamente mi caso y determinaran si es posible restaurar el acceso a mi cuenta.
+
+Muchas gracias por su tiempo, atención y ayuda.
+
+Atentamente,
+Propietario de la cuenta
+Número: {num}""",
+
+    """إلى فريق دعم واتساب المحترم،
+
+أتقدم إليكم بهذا الطلب من أجل مراجعة حالة حساب واتساب المرتبط بالرقم {num}.
+
+تم تقييد حسابي مؤخراً ولم أعد قادراً على استخدام الخدمة بشكل طبيعي. أعتقد أن التقييد قد يكون نتيجة خطأ أو مراجعة آلية للحساب.
+
+أحترم شروط استخدام واتساب وأرغب في الالتزام بجميع القواعد والسياسات المعمول بها.
+
+هذا الحساب مهم جداً بالنسبة لي لأنه يستخدم للتواصل مع العائلة والأصدقاء والعملاء وجهات الاتصال المختلفة.
+
+أرجو من فريق الدعم مراجعة حالة الحساب والتحقق من سبب التقييد، وإخباري بما يمكنني فعله لاستعادة الوصول إذا كان ذلك ممكناً.
+
+شكراً لكم على وقتكم ومساعدتكم.
+
+مع خالص الاحترام،
+صاحب الحساب
+رقم الهاتف: {num}""",
+
+    """Guten Tag liebes WhatsApp-Support-Team,
+
+ich möchte Sie höflich bitten, mein WhatsApp-Konto mit der Telefonnummer {num} zu überprüfen.
+
+Mein Konto wurde eingeschränkt und ich kann WhatsApp derzeit nicht wie gewohnt verwenden. Ich bin mir nicht sicher, warum diese Einschränkung vorgenommen wurde, und möchte daher gerne um eine erneute Überprüfung bitten.
+
+Ich respektiere die Nutzungsbedingungen von WhatsApp und möchte den Dienst weiterhin ordnungsgemäß und verantwortungsvoll verwenden.
+
+Das Konto ist für meine tägliche Kommunikation mit Familie, Freunden und anderen Kontakten wichtig.
+
+Bitte überprüfen Sie meinen Fall und teilen Sie mir mit, ob der Zugriff auf mein Konto wiederhergestellt werden kann.
+
+Vielen Dank für Ihre Zeit und Unterstützung.
+
+Mit freundlichen Grüßen
+Kontoinhaber
+Telefonnummer: {num}"""
+]
 
 
 # ==========================================================
