@@ -1,14 +1,20 @@
-# KAIRO-PY
+# 🔴 KAIRO-TERMUX-TOOL-V1
 
-Python project by KAIRO.
+> **KAIRO DEV** — Python / Termux Project
 
-## Requirements
+## 📌 Présentation
+
+Projet Python développé pour fonctionner dans un environnement Termux.
+
+## ⚙️ Exigences
 
 - Python 3.9+
+- Termux
+- Git
 
-## Installation
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/GaaraTechx/KAIRO-PY.git
-cd KAIRO-PY
+git clone https://github.com/kairotechx-oss/KAIRO-TERMUX-TOOL-V1.git
+cd KAIRO-TERMUX-TOOL-V1
 pip install -r requirements.txt
