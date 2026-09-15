@@ -118,9 +118,8 @@ Telefonnummer: {num}"""
 # ==========================================================
 # 2. CONFIGURATION ET EMAILS SUPPORT
 # ==========================================================
-export SENDER_EMAIL="kairodev3@gmail.com"
-export GMAIL_APP_PASSWORD="KAIRO DEV 123"
-
+SENDER_EMAIL = os.getenv("SENDER_EMAIL")
+PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 EMAILS_SUPPORT = [
     "android@support.whatsapp.com",
     "android@whatsapp.com",
@@ -138,7 +137,7 @@ EMAILS_SUPPORT = [
     "brand@fb.com"
 ]
 
-# ==========================================================
+==========================================================
 # 3. FONCTIONS VISUELLES
 # ==========================================================
 
