@@ -139,59 +139,27 @@ EMAILS_SUPPORT = [
     "brand@fb.com"
 ]
 
+==========================================================
+# 3. FONCTIONS VISUELLES
 # ==========================================================
-# 3. FONCTIONS VISUELLES — KAIRO DEV RED STYLE
-# ==========================================================
-
-RED = "\033[1;31m"
-LIGHT_RED = "\033[91m"
-WHITE = "\033[1;37m"
-RESET = "\033[0m"
-
 
 def animation_fin():
     print("\n")
-
     for i in range(11):
-        sys.stdout.write(
-            f"\r{RED}   [ KAIRO DEV ] FINALISATION : "
-            f"{'#' * i}{'.' * (10 - i)} 100%{RESET}"
-        )
+        sys.stdout.write(f"\r\033[1;32m   ᴋᴀɪʀᴏ ᴅᴇᴠ FINALISATION : {'#'*i}{'.'*(10-i)} 100%")
         sys.stdout.flush()
         time.sleep(0.08)
-
-    print(
-        f"\n\n{RED}"
-        + "╔════════════════════════════════════════════╗"
-    )
-    print("║PROCESSUS FINALISÉ AVEC SUCCÈS║")
-    print(
-        "╚════════════════════════════════════════════╝"
-        f"{RESET}\n"
-    )
-
+    print("\n\n\033[1;32m" + "╔════════════════════════════════════════════╗")
+    print("║        PROCESSUS FINALISÉ AVEC SUCCÈS      ║")
+    print("╚════════════════════════════════════════════╝\033[0m\n")
 
 def barre_progression(actuel, total, status=''):
     longueur = 20
-
-    pourcent = int(round(
-        100.0 * actuel / float(total)
-    ))
-
-    rempli = int(round(
-        longueur * actuel / float(total)
-    ))
-
+    pourcent = int(round(100.0 * actuel / float(total)))
+    rempli = int(round(longueur * actuel / float(total)))
     barre = '█' * rempli + '░' * (longueur - rempli)
-
-    sys.stdout.write(
-        f'\r{RED}[{status}] '
-        f'{pourcent}% '
-        f'|{barre}|{RESET}'
-    )
-
+    sys.stdout.write(f'\r\033[1;36m[{status}] \033[1;33m{pourcent}% \033[1;32m|{barre}| \033[0m')
     sys.stdout.flush()
-
 
 # ==========================================================
 # 4. LOGIQUE PRINCIPALE
@@ -201,202 +169,70 @@ def mass_mailer():
     try:
         while True:
             os.system("clear")
+            os.system("figlet -f slant '𝗞𝗔𝗜𝗥𝗢 𝗗𝗘𝗩' | lolcat")
+            print("\033[1;34m" + "═"*509 + "\033[0m")
+            print("\033[1;37m  {1} BAN ACCOUNT 👿       {2} UNBAN ACCOUNT 🛡\033[0m")
+            print("\033[1;34m" + "═"*509 + "\033[0m")
 
-            # HEADER
-            os.system(
-                "figlet -f slant 'KAIRO DEV' | lolcat"
-            )
-
-            print(
-                f"{RED}" +
-                "═" * 70 +
-                f"{RESET}"
-            )
-
-            print(
-                f"{WHITE}"
-                "  {1} BAN ACCOUNT 👿"
-                "         "
-                "{2} UNBAN ACCOUNT 🛡"
-                f"{RESET}"
-            )
-
-            print(
-                f"{RED}" +
-                "═" * 70 +
-                f"{RESET}"
-            )
-
-            print(
-                f"{RED}"
-                "        [ KAIRO DEV ] • SYSTEM ONLINE"
-                f"{RESET}"
-            )
-
-            print(
-                f"{RED}" +
-                "═" * 70 +
-                f"{RESET}"
-            )
-
-            choix = input(
-                f"{RED}[?] Action : {RESET}"
-            )
-
-            num_input = input(
-                f"{RED}[?] Numéro WhatsApp : {RESET}"
-            ).strip()
+            choix = input("\033[1;33m[?] Action : \033[0m")
+            num_input = input("\033[1;33m[?] Numéro WhatsApp : \033[0m").strip()
 
             # Correction automatique du '+'
-            num_tel = (
-                num_input
-                if num_input.startswith('+')
-                else "+" + num_input
-            )
+            num_tel = num_input if num_input.startswith('+') else "+" + num_input
 
             while True:
                 try:
-                    nb = int(
-                        input(
-                            f"{RED}[?] Quantité (1-50) : "
-                            f"{RESET}"
-                        )
-                    )
+                    nb = int(input("\033[1;33m[?] Quantité (1-50) : \033[0m"))
+                    if 1 <= nb <= 50: break
+                    else: print("\033[1;31m[!] Erreur: Choisissez entre 1 et 50.\033[0m")
+                except ValueError: pass
 
-                    if 1 <= nb <= 10:
-                        break
+            base_textes = PHRASES_BAN if choix == '1' else PHRASES_UNBAN
+            cibles = random.sample(EMAILS_SUPPORT, 5)
 
-                    else:
-                        print(
-                            f"{RED}"
-                            "[!] Erreur : "
-                            "Choisissez entre 1 et 50."
-                            f"{RESET}"
-                        )
-
-                except ValueError:
-                    pass
-
-            base_textes = (
-                PHRASES_BAN
-                if choix == '1'
-                else PHRASES_UNBAN
-            )
-
-            cibles = random.sample(
-                EMAILS_SUPPORT,
-                5
-            )
-
-            print(
-                f"\n{RED}"
-                f">>> CONNEXION POUR LA CIBLE : "
-                f"{num_tel}..."
-                f"{RESET}"
-            )
-
-            server = smtplib.SMTP(
-                "smtp.gmail.com",
-                587
-            )
-
+            print(f"\n\033[1;36m>>> CONNEXION POUR LA CIBLE : {num_tel}...\033[0m")
+            server = smtplib.SMTP("smtp.gmail.com", 587)
             server.starttls()
+            server.login(SENDER_EMAIL, PASSWORD)
 
-            server.login(
-                SENDER_EMAIL,
-                PASSWORD
-            )
-
-            # Calcul du total
-            total_mails = (
-                len(cibles) * nb * 3
-            )
-
+            # Calcul du total pour la barre de progression
+            total_mails = len(cibles) * nb * 3
             compteur = 0
 
             print("\n")
-
             for email in cibles:
-
                 for i in range(nb):
-
-                    # Sélection des phrases
-                    taille_selection = min(
-                        3,
-                        len(base_textes)
-                    )
-
-                    selection_3_phrases = random.sample(
-                        base_textes,
-                        taille_selection
-                    )
+                    # On sélectionne 3 phrases différentes (si dispo)
+                    taille_selection = min(3, len(base_textes))
+                    selection_3_phrases = random.sample(base_textes, taille_selection)
 
                     for phrase in selection_3_phrases:
-
-                        # Remplacement du numéro
-                        body = (
-                            phrase
-                            .replace("{num}", num_tel)
-                            .replace("{Num}", num_tel)
-                        )
+                        # Remplacement de {num} (toujours en minuscules)
+                        # Cette ligne remplace les deux versions d'un coup
+                        body = phrase.replace("{num}", num_tel).replace("{Num}", num_tel)
 
                         msg = MIMEMultipart()
-
                         msg['From'] = SENDER_EMAIL
                         msg['To'] = email
-
-                        msg['Subject'] = (
-                            f"Support Inquiry ID-"
-                            f"{random.randint(1000, 9999)}"
-                        )
-
-                        msg.attach(
-                            MIMEText(
-                                body,
-                                'plain'
-                            )
-                        )
+                        msg['Subject'] = f"Support Inquiry ID-{random.randint(1000,9999)}"
+                        msg.attach(MIMEText(body, 'plain'))
 
                         try:
                             server.send_message(msg)
-
-                        except:
-                            pass
+                        except: pass
 
                         compteur += 1
-
-                        barre_progression(
-                            compteur,
-                            total_mails,
-                            status='DISPATCH'
-                        )
-
+                        barre_progression(compteur, total_mails, status='DISPATCH')
                         time.sleep(0.3)
 
             server.quit()
-
             animation_fin()
 
-            if input(
-                f"{RED}[?] Recommencer ? (y/n) : "
-                f"{RESET}"
-            ).lower() != 'y':
-                break
+            if input("\033[1;33m[?] Recommencer ? (y/n) : \033[0m").lower() != 'y': break
 
     except KeyboardInterrupt:
-
-        print(
-            f"\n\n{RED}"
-            "[!] ARRÊT DU SYSTÈME."
-            f"{RESET}"
-        )
-
+        print("\n\n\033[1;31m[!] ARRÊT DU SYSTÈME.\033[0m")
         sys.exit()
-
-
-# ==========================================================
-# 5. START
-# ==========================================================
 
 if __name__ == "__main__":
     mass_mailer()
