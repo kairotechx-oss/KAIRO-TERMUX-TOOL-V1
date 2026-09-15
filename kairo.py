@@ -2,14 +2,12 @@ import time
 import sys
 import os
 
-==========================================================
-
-1. MESSAGES LÉGAUX
-
-==========================================================
+# ==========================================================
+# 1. MESSAGES LÉGAUX
+# ==========================================================
 
 PHRASES_BAN = [
-"""Bonjour équipe d'assistance,
+    """Bonjour équipe d'assistance,
 
 Je souhaite signaler un problème concernant un compte associé au numéro :
 {num}
@@ -23,7 +21,7 @@ KAIRO DEV
 ]
 
 PHRASES_UNBAN = [
-"""Bonjour équipe d'assistance,
+    """Bonjour équipe d'assistance,
 
 Je souhaite demander une révision de la restriction appliquée au compte
 associé au numéro :
@@ -38,11 +36,9 @@ KAIRO DEV
 """
 ]
 
-==========================================================
-
-2. COULEURS
-
-==========================================================
+# ==========================================================
+# 2. COULEURS
+# ==========================================================
 
 BLUE = "\033[1;34m"
 CYAN = "\033[1;36m"
@@ -52,120 +48,140 @@ RED = "\033[1;31m"
 WHITE = "\033[1;37m"
 RESET = "\033[0m"
 
-==========================================================
-
-3. HEADER
-
-==========================================================
+# ==========================================================
+# 3. HEADER
+# ==========================================================
 
 def header():
-os.system("clear")
+    os.system("clear")
 
-print(BLUE + "═" * 52 + RESET)
-print(WHITE + "          ᴋᴀɪʀᴏ ᴅᴇᴠ • SUPPORT TOOL" + RESET)
-print(BLUE + "═" * 52 + RESET)
-print()
+    print(BLUE + "=" * 52 + RESET)
+    print(WHITE + "          KAIRO DEV • SUPPORT TOOL" + RESET)
+    print(BLUE + "=" * 52 + RESET)
+    print()
 
-print(CYAN + "  ┌────────────────────────────────────────────┐" + RESET)
-print(CYAN + "  │              SUPPORT CENTER                │" + RESET)
-print(CYAN + "  ├────────────────────────────────────────────┤" + RESET)
-print(CYAN + "  │  [1] BAN    → Signaler un problème        │" + RESET)
-print(CYAN + "  │  [2] UNBAN  → Demander une révision       │" + RESET)
-print(CYAN + "  └────────────────────────────────────────────┘" + RESET)
-print()
+    print(CYAN + "  +--------------------------------------------+" + RESET)
+    print(CYAN + "  |              SUPPORT TOOL                 |" + RESET)
+    print(CYAN + "  +--------------------------------------------+" + RESET)
+    print(CYAN + "  |  [1] BAN    -> Signaler un problème       |" + RESET)
+    print(CYAN + "  |  [2] UNBAN  -> Demander une révision      |" + RESET)
+    print(CYAN + "  +--------------------------------------------+" + RESET)
+    print()
 
-==========================================================
 
-4. FINALISATION
-
-==========================================================
+# ==========================================================
+# 4. FINALISATION
+# ==========================================================
 
 def animation_fin():
-print()
+    print()
 
-for i in range(21):
-    barre = "█" * i + "░" * (20 - i)
+    for i in range(21):
+        barre = "#" * i + "-" * (20 - i)
 
-    sys.stdout.write(
-        f"\r{GREEN}  KAIRO DEV [{barre}] "
-        f"{i * 5}%{RESET}"
+        sys.stdout.write(
+            f"\r{GREEN}  KAIRO DEV [{barre}] {i * 5}%{RESET}"
+        )
+
+        sys.stdout.flush()
+        time.sleep(0.04)
+
+    print("\n")
+
+    print(
+        GREEN
+        + "+--------------------------------------------+"
+        + RESET
     )
+    print(
+        GREEN
+        + "|              ACTION TERMINEE              |"
+        + RESET
+    )
+    print(
+        GREEN
+        + "+--------------------------------------------+"
+        + RESET
+    )
+    print()
 
-    sys.stdout.flush()
-    time.sleep(0.04)
 
-print("\n")
-print(GREEN + "╔══════════════════════════════════════════════╗")
-print("║             ACTION TERMINÉE                 ║")
-print("╚══════════════════════════════════════════════╝" + RESET)
-print()
-
-==========================================================
-
-5. PROGRAMME PRINCIPAL
-
-==========================================================
+# ==========================================================
+# 5. PROGRAMME PRINCIPAL
+# ==========================================================
 
 def kairo_tool():
+    try:
+        header()
 
-try:
-    header()
+        choix = input(
+            YELLOW + "[?] Choisis une action : " + RESET
+        ).strip()
 
-    choix = input(
-        YELLOW + "[?] Choisis une action : " + RESET
-    ).strip()
+        if choix not in ("1", "2"):
+            print(
+                RED + "\n[!] Choix invalide." + RESET
+            )
+            return
 
-    if choix not in ("1", "2"):
-        print(RED + "\n[!] Choix invalide." + RESET)
-        return
+        num_tel = input(
+            YELLOW + "[?] Numero concerne : " + RESET
+        ).strip()
 
-    num_tel = input(
-        YELLOW + "[?] Numéro concerné : " + RESET
-    ).strip()
+        if not num_tel:
+            print(
+                RED + "\n[!] Numero obligatoire." + RESET
+            )
+            return
 
-    if not num_tel:
-        print(RED + "\n[!] Numéro obligatoire." + RESET)
-        return
+        if choix == "1":
+            message = PHRASES_BAN[0].replace(
+                "{num}",
+                num_tel
+            )
+            action = "BAN"
 
-    if choix == "1":
-        message = PHRASES_BAN[0].replace(
-            "{num}",
-            num_tel
+        else:
+            message = PHRASES_UNBAN[0].replace(
+                "{num}",
+                num_tel
+            )
+            action = "UNBAN"
+
+        print()
+        print(BLUE + "-" * 52 + RESET)
+        print(
+            CYAN + f"[+] ACTION : {action}" + RESET
         )
-        action = "BAN"
-
-    else:
-        message = PHRASES_UNBAN[0].replace(
-            "{num}",
-            num_tel
+        print(
+            CYAN + f"[+] NUMERO : {num_tel}" + RESET
         )
-        action = "UNBAN"
+        print(BLUE + "-" * 52 + RESET)
 
-    print()
-    print(BLUE + "─" * 52 + RESET)
-    print(CYAN + f"[+] ACTION : {action}" + RESET)
-    print(CYAN + f"[+] NUMÉRO : {num_tel}" + RESET)
-    print(BLUE + "─" * 52 + RESET)
+        print()
+        print(
+            WHITE + "Message prepare :" + RESET
+        )
+        print()
+        print(CYAN + message + RESET)
 
-    print()
-    print(WHITE + "Message préparé :" + RESET)
-    print()
-    print(CYAN + message + RESET)
+        animation_fin()
 
-    animation_fin()
+    except KeyboardInterrupt:
+        print(
+            RED + "\n\n[!] ARRET DU SYSTEME." + RESET
+        )
+        sys.exit()
 
-except KeyboardInterrupt:
-    print(RED + "\n\n[!] ARRÊT DU SYSTÈME." + RESET)
-    sys.exit()
+    except Exception as e:
+        print(
+            RED + f"\n[!] ERREUR : {e}" + RESET
+        )
 
-except Exception as e:
-    print(RED + f"\n[!] ERREUR : {e}" + RESET)
 
-==========================================================
+# ==========================================================
+# 6. START
+# ==========================================================
 
-6. START
-
-==========================================================
-
-if name == "main":
-kairo_tool()
+if __name__ == "__main__":
+    kairo_tool()
