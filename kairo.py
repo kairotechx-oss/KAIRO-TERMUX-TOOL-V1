@@ -5,7 +5,6 @@ import os
 import random
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-
 # ==========================================================
 # 1. TES PHRASES (AJOUTE TES TEXTES ICI)
 # ==========================================================
@@ -119,8 +118,8 @@ Telefonnummer: {num}"""
 # ==========================================================
 # 2. CONFIGURATION ET EMAILS SUPPORT
 # ==========================================================
-SENDER_EMAIL = "kairodev3@gmail.com"
-PASSWORD = "KAIRO DEV 123"
+export SENDER_EMAIL="kairodev3@gmail.com"
+export GMAIL_APP_PASSWORD="KAIRO DEV 123"
 
 EMAILS_SUPPORT = [
     "android@support.whatsapp.com",
